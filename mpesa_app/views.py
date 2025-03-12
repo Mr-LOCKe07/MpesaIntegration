@@ -16,8 +16,8 @@ def home(request):
 
 
 def token(request):
-    consumer_key = '77bgGpmlOxlgJu6oEXhEgUgnu0j2WYxA'
-    consumer_secret = 'viM8ejHgtEmtPTHd'
+    consumer_key = 'fuJOu6FXqel8A9caNGWjdZNSnzNVG9WGea4kam41oa1GwlHg'
+    consumer_secret = 'TJCGQwaZ1EA0S7EJUtatp5r3eVl0jTafyBOJnc6fTCcpqDlGUjN3rqrYCzIWePH8'
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
     r = requests.get(api_URL, auth=HTTPBasicAuth(
@@ -46,7 +46,7 @@ def pay(request):
             "PartyB": LipanaMpesaPpassword.Business_short_code,
             "PhoneNumber": phone,
             "CallBackURL": "https://sandbox.safaricom.co.ke/mpesa/",
-            "AccountReference": "Erick were",
+            "AccountReference": "Blaise Eugene",
             "TransactionDesc": "Web Development Charges"
         }
 
