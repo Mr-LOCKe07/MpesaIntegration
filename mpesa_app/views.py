@@ -29,6 +29,7 @@ def token(request):
 
 
 def pay(request):
+    global api_url, headers
     if request.method == "POST":
         phone = request.POST['phone']
         amount = request.POST['amount']
